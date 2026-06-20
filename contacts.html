@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacts</title>
+  <meta name="description" content="Contacts">
+  <style>
+  :root{
+    --bg: #0b1220;
+    --card: #0f1724;
+    --muted: #9aa4b2;
+    --text: #e6eef8;
+    --accent: #58a6ff;
+    --border: #1b2430;
+  }
+  *{box-sizing:border-box}
+  body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; color:var(--text); background:var(--bg); display:flex; flex-direction:column; min-height:100vh}
+  header{background:var(--card); padding:16px 18px; border-bottom:1px solid var(--border)}
+  nav{display:flex; justify-content:center}
+  .nav{list-style:none; margin:0; padding:0; display:flex; gap:18px}
+  .nav a{color:var(--text); text-decoration:none; font-weight:600; padding:6px 8px}
+  .nav a:hover{color:var(--accent)}
+  main{flex:1; padding:36px}
+  .contact-list{list-style:none; padding:0; margin:12px 0 0 0; display:flex; flex-direction:column; gap:10px}
+  .contact-list a{color:var(--accent); text-decoration:none}
+  .contact-list a:hover{text-decoration:underline}
+  footer{background:var(--card); border-top:1px solid var(--border); padding:14px 18px; text-align:center; color:var(--muted); font-size:14px}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">About</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact</h1>
+    <p>Placeholder contact information:</p>
+    <ul class="contact-list">
+      <li>Phone: <a href="tel:+1111111">+1111111</a></li>
+      <li>Email: <a href="mailto:+1111111@example.com">+1111111@example.com</a></li>
+      <li>Telegram: <a href="#">+1111112</a></li>
+      <li>Instagram: <a href="#">+1111113</a></li>
+      <li>Twitter/X: <a href="#">+1111114</a></li>
+      <li>GitHub: <a href="#">+1111115</a></li>
+      <li>LinkedIn: <a href="#">+1111116</a></li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>?</p>
+  </footer>
+</body>
+</html>
